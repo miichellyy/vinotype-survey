@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Input Form</title>
+	<link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+<body>
+    <script src="survey.js"></script>
+    <form>
+        <div class="sliders">
+          <label for="body"><h5>First, let's look at <b>Body.</b></h5></label>
+          <label for="body"> Body is used to describe the feel of a wines intensity or richness from light to bold. Think of coconut water versus coconut milk. A coconut milk is going to have a bolder, or fuller feel. The same concept goes for wine.
+            <br><i>Do you prefer wines that are bolder (fuller) or lighter? </i></label>
+          <input type="range" id="body" name="body" min="0" max="87" value="0" step="17.4">
+      
+          <label for="tannins">Next up is <b>tannins.</b></label>
+          <label for="tannins">Tannins are naturally occurring polyphenols found in plants, bark, leaves and fruit skins and are known to have various health benefits. A wine with a high amount of tannins will give off that astringent “dry” feeling that makes your lips stick to your teeth. 
+            <br><i>Do you prefer wines that are more or less tannic?</i></label>
+          <input type="range" id="tannins" name="tannins" min="0" max="87" value="0" step="17.4">
+      
+          <label for="sugar">Now let's look at <b>sugar.</b></label>
+          <label for="sugar">Sugar seems like it should be a pretty easily identifiable characteristic. However, in wine, other characteristics such as tannins and acidity can distort the actual amount if residual sugar. A wine with a lower amount of residual sugars is considered dry, while wine with a larger amount of sugars is considered sweet. 
+            <br><i>Do you prefer wines that are sweeter (more sugar) or drier (less sugar)?</i></label>
+          <input type="range" id="sugar" name="sugar" min="0" max="87" value="0" step="17.4">
+      
+          <label for="acid">Last but not least, <b>acidity.</b></label>
+          <label for="acid">Acidity is what can give wine a tart or sour taste along with a tingling or mouth-watering feeling when you sip. Highly acidic wines may taste less sweet and lighter bodied while lower acidity may taste bolder and sweeter. 
+            <br><i>Do you prefer wines that are acidic or more mellow?</i></label>
+          <input type="range" id="acid" name="acid" min="0" max="87" value="0" step="17.4">
+        </div>
+      
+        <button id="submit-btn" class="submit-btn">Submit</button>
+      </form>
+      
+      <div id="result" class="resultButtons"></div>
+</body>
+</html>

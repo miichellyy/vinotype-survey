@@ -1,0 +1,47 @@
+form {
+  margin: 10px auto;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+input[type=range] {
+	-webkit-appearance: none;
+	height: 10px;
+  width: 90%;
+	background: #ddd;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+input[type=range]:focus {
+	outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+  background-image: url('https://i.ibb.co/gF9Fjxw/Knob.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+	border-radius: 50%;
+	cursor: pointer;
+} 
+
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+button {
+  border: 2px solid;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+}
+
